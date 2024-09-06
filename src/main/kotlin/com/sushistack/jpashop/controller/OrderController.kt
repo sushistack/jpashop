@@ -38,13 +38,15 @@ class OrderController(
         return "redirect:/orders"
     }
 
-//    @GetMapping("/orders")
-//    fun orderList(@ModelAttribute("orderSearch") orderSearch: OrderSearch?, model: Model): String {
-//        val orders: List<Order> = orderService
-//        model.addAttribute("orders", orders)
-//
-//        return "order/orderList"
-//    }
+    /*
+    @GetMapping("/orders")
+    fun orderList(@ModelAttribute("orderSearch") orderSearch: OrderSearch?, model: Model): String {
+        val orders: List<Order> = orderService
+        model.addAttribute("orders", orders)
+
+        return "order/orderList"
+    }
+    */
 
     @PostMapping("/orders/{orderId}/cancel")
     fun cancelOrder(@PathVariable("orderId") orderId: Long): String {

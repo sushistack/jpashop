@@ -12,7 +12,7 @@ class Delivery {
     val id: Long? = null
 
     @JsonIgnore
-    @OneToOne(mappedBy = "delivery", fetch = LAZY)
+    @OneToOne(mappedBy = "changeDelivery", fetch = LAZY)
     var order: Order? = null
 
     @Embedded

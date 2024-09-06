@@ -28,7 +28,7 @@ class Order {
     var status: OrderStatus = OrderStatus.NONE //주문상태 [ORDER, CANCEL]
 
     //==연관관계 메서드==//
-    fun setMember(member: Member) {
+    fun changeMember(member: Member) {
         this.member = member
         member.orders.add(this)
     }
@@ -38,7 +38,7 @@ class Order {
         orderItem.order = this
     }
 
-    fun setDelivery(delivery: Delivery) {
+    fun changeDelivery(delivery: Delivery) {
         this.delivery = delivery
         delivery.order = this
     }
@@ -73,8 +73,8 @@ class Order {
         //==생성 메서드==//
         fun createOrder(member: Member, delivery: Delivery, vararg orderItems: OrderItem): Order {
             val order = Order()
-            order.setMember(member)
-            order.setDelivery(delivery)
+            order.changeMember(member)
+            order.changeDelivery(delivery)
             for (orderItem in orderItems) {
                 order.addOrderItem(orderItem)
             }
