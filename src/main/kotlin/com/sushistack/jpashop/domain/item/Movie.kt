@@ -4,7 +4,7 @@ import jakarta.persistence.DiscriminatorValue
 import jakarta.persistence.Entity
 
 @Entity
-@DiscriminatorValue("A")
+@DiscriminatorValue("M")
 class Movie : Item() {
     private val director: String = ""
     private val actor: String = ""

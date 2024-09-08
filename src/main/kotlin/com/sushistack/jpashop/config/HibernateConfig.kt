@@ -1,4 +1,4 @@
-package com.sushistack.config
+package com.sushistack.jpashop.config
 
 import com.fasterxml.jackson.datatype.hibernate5.Hibernate5Module
 import org.springframework.context.annotation.Bean

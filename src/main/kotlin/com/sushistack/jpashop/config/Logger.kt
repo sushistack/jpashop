@@ -1,4 +1,4 @@
-package com.sushistack.config
+package com.sushistack.jpashop.config
 
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.config.BeanPostProcessor

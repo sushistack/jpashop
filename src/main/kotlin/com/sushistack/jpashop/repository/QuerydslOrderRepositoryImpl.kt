@@ -9,7 +9,9 @@ import com.sushistack.jpashop.domain.QOrder.order
 import com.sushistack.jpashop.domain.QOrderItem.orderItem
 import com.sushistack.jpashop.domain.item.QItem.item
 import org.springframework.data.domain.Pageable
+import org.springframework.stereotype.Repository
 
+@Repository
 class QuerydslOrderRepositoryImpl(private val queryFactory: JPAQueryFactory) : QuerydslOrderRepository {
     override fun findAllByMemberNameAndStatus(memberName: String?, status: OrderStatus?): List<Order> =
         queryFactory

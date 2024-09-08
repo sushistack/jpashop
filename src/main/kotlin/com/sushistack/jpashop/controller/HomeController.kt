@@ -1,6 +1,6 @@
 package com.sushistack.jpashop.controller
 
-import com.sushistack.config.Log
+import com.sushistack.jpashop.config.Log
 import org.slf4j.Logger
 import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.RequestMapping

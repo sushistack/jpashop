@@ -16,6 +16,6 @@ class Member {
     var address: Address? = null
 
     @JsonIgnore
-    @OneToMany(mappedBy = "changeMember")
+    @OneToMany(mappedBy = "member")
     val orders: MutableList<Order> = mutableListOf()
 }

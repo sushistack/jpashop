@@ -5,6 +5,7 @@ import jakarta.persistence.FetchType.*
 import java.time.LocalDateTime
 
 @Entity
+@Table(name = "orders")
 class Order {
     @Id
     @GeneratedValue
