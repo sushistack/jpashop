@@ -7,6 +7,10 @@ import org.springframework.context.annotation.Configuration
 @Configuration
 class HibernateConfig {
 
+    /**
+     * Jackson 을 통해 json 으로 내려줄 때, LAZY 로 설정된 proxy 객체 내려줄 때 필요한 설정
+     * 기본은 null 로 내려 주는 것
+     */
     @Bean
     fun hibernate5Module(): Hibernate5Module {
         val hibernate5Module = Hibernate5Module()
